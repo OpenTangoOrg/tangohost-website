@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — TangoHost</title>
+  <meta name="description" content="TangoHost connects dancers whose journeys overlap — shared rides, shared rooms, and hosts, for tango trips." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /*
+      This page carries its own finished visual design (warm cream /
+      terracotta / Fraunces+Work Sans) from the about-page handoff.
+      Scoping the shared tokens here — rather than editing css/styles.css —
+      lets the shared header/footer pick up the same palette on this page
+      without changing how they look anywhere else on the site.
+    */
+    :root {
+      --bg: oklch(97% 0.015 65);
+      --bg-alt: #fff;
+      --text: oklch(20% 0.02 75);
+      --text-muted: oklch(42% 0.02 75);
+      --accent: #ED6558;
+      --accent-hover: oklch(52% 0.16 30);
+      --border: oklch(90% 0.015 75);
+    }
+
+    body {
+      font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .about-band {
+      padding: 90px 40px;
+    }
+
+    .about-band-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .about-hero {
+      padding: 110px 40px 90px;
+      text-align: center;
+    }
+
+    .about-eyebrow {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .about-hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 60px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 18px 0 0;
+      letter-spacing: -0.015em;
+      line-height: 1.08;
+      text-wrap: pretty;
+    }
+
+    .about-hero p {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin: 22px auto 0;
+      max-width: 620px;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .about-section-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    .about-values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 36px;
+    }
+
+    .about-value-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: oklch(94% 0.04 40);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-value h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 16px 0 0;
+    }
+
+    .about-value p {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      margin: 8px 0 0;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .about-do-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .about-do-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 26px 28px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .about-do-card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .about-do-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin: 7px 0 0;
+      line-height: 1.55;
+      text-wrap: pretty;
+    }
+
+    .about-dark {
+      background: oklch(24% 0.03 40);
+    }
+
+    .about-dark-eyebrow {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: oklch(75% 0.11 40);
+    }
+
+    .about-dark h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: oklch(97% 0.01 75);
+      margin: 14px 0 0;
+      letter-spacing: -0.01em;
+      max-width: 700px;
+      line-height: 1.15;
+      text-wrap: pretty;
+    }
+
+    .about-dark > .about-band-inner > p {
+      font-size: 18px;
+      color: oklch(78% 0.02 75);
+      margin: 16px 0 0;
+      max-width: 640px;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .about-dark-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .about-dark-card {
+      border: 1px solid oklch(38% 0.03 40);
+      border-radius: 18px;
+      padding: 24px 26px;
+    }
+
+    .about-dark-card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: oklch(97% 0.01 75);
+      margin: 0;
+    }
+
+    .about-dark-card p {
+      font-size: 15.5px;
+      color: oklch(76% 0.02 75);
+      margin: 7px 0 0;
+      line-height: 1.55;
+      text-wrap: pretty;
+    }
+
+    .about-cta {
+      padding: 100px 40px 130px;
+      text-align: center;
+    }
+
+    .about-cta h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+      letter-spacing: -0.01em;
+      text-wrap: pretty;
+    }
+
+    .about-cta p {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin: 16px auto 0;
+      max-width: 520px;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .about-cta .btn-primary {
+      margin-top: 28px;
+      padding: 15px 38px;
+      border-radius: 999px;
+      font-size: 16.5px;
+    }
+
+    @media (max-width: 640px) {
+      .about-hero {
+        padding: 72px 24px 56px;
+      }
+
+      .about-hero h1 {
+        font-size: 38px;
+      }
+
+      .about-band {
+        padding: 56px 24px;
+      }
+
+      .about-section-heading {
+        font-size: 26px;
+      }
+
+      .about-values,
+      .about-do-grid,
+      .about-dark-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-cta {
+        padding: 64px 24px 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">TangoHost</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about-app.html" aria-current="page">Product</a>
+        <a href="about-us.html">About</a>
+        <a href="cincoh5pilot.html">Cincoh 5 Pilot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about-hero">
+      <div class="about-eyebrow">TangoHost</div>
+      <h1>Travel further, together.</h1>
+      <p>TangoHost connects dancers whose journeys overlap, so the practical parts of a trip — the ride, the room — get easier to sort out.</p>
+    </section>
+
+    <section class="about-band" style="background: var(--bg-alt);">
+      <div class="about-band-inner">
+        <h2 class="about-section-heading">Why we built it</h2>
+        <div class="about-values">
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M19.75 6.32c-.18-.53-.68-.87-1.25-.87H5.5c-.57 0-1.07.34-1.25.87L3 10v7c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-7l-1.25-3.68ZM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15Zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5ZM5 10l1.13-3.5h11.74L19 10H5Z" fill="var(--accent)"></path></svg>
+            </div>
+            <h3>Travel more, spend less</h3>
+            <p>A shared taxi and a shared room turn a trip you were weighing into a trip you take.</p>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M16.5 9a3.5 3.5 0 1 0-3.4-4.3A3.5 3.5 0 1 0 9 9a3.5 3.5 0 0 0 3.5-1.03A3.49 3.49 0 0 0 16.5 9ZM8.5 11c-2.33 0-7 1.17-7 3.5V17h7.5c-.32-.61-.5-1.29-.5-2 0-1.9 1.28-3.5 3-3.98C10.85 10.2 9.6 11 8.5 11Zm7.5 1c-2.33 0-7 1.17-7 3.5V17h14v-1.5c0-2.33-4.67-3.5-7-3.5Z" fill="var(--accent)"></path></svg>
+            </div>
+            <h3>Arrive knowing someone</h3>
+            <p>Reconnect with old friends, meet new ones — the ride from the airport is where it starts.</p>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--accent)" stroke-width="1.9"></circle><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" fill="none" stroke="var(--accent)" stroke-width="1.5"></path></svg>
+            </div>
+            <h3>Travel changes you</h3>
+            <p>New cities, new floors, new people. Going further widens what you think is possible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-band">
+      <div class="about-band-inner">
+        <h2 class="about-section-heading">What you can do</h2>
+        <div class="about-do-grid">
+          <div class="about-do-card">
+            <h3>Share a ride</h3>
+            <p>Post your airport arrival, see who lands near your time, split the taxi.</p>
+          </div>
+          <div class="about-do-card">
+            <h3>Share a room</h3>
+            <p>Offer a spare bed or find one — hotel or Airbnb, for the nights you need.</p>
+          </div>
+          <div class="about-do-card">
+            <h3>Host, or find a host</h3>
+            <p>Open your home to a visiting dancer, or stay with a local when you travel.</p>
+          </div>
+          <div class="about-do-card">
+            <h3>Offer seats in your car</h3>
+            <p>Driving or renting a car? Post your empty seats and pick up dancers along the way.</p>
+          </div>
+          <div class="about-do-card">
+            <h3>Organizer shuttles</h3>
+            <p>Running a shuttle for your event? Post it so guests can find and book a seat.</p>
+          </div>
+          <div class="about-do-card">
+            <h3>Find a registration partner</h3>
+            <p>For events that require couples registration, find someone to sign up with.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-band about-dark">
+      <div class="about-band-inner">
+        <div class="about-dark-eyebrow">Controlled visibility</div>
+        <h2>Only see what you need to see.</h2>
+        <p>Coordinating travel shouldn't mean broadcasting your plans to a whole group chat.</p>
+        <div class="about-dark-grid">
+          <div class="about-dark-card">
+            <h3>You're visible to the right people</h3>
+            <p>Only the people looking for the same thing, at the same time, see that you're looking too.</p>
+          </div>
+          <div class="about-dark-card">
+            <h3>Hosts stay in control</h3>
+            <p>You decide who sees your details, and when. Your address isn't a public listing.</p>
+          </div>
+          <div class="about-dark-card">
+            <h3>Tap to answer</h3>
+            <p>Accept or decline in one tap. Less typing, fewer threads to keep up with.</p>
+          </div>
+          <div class="about-dark-card">
+            <h3>Say no without explaining</h3>
+            <p>Declining is a button, not a conversation. No reason required, no awkwardness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>Going somewhere soon?</h2>
+      <p>Add your trip and see who else is on their way.</p>
+      <a class="btn btn-primary" href="mailto:isabelle.haulin@opentango.org?subject=TangoHost%20Cincoh%205%20Pilot">Get started</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 TangoHost. All rights reserved.</span>
+      <nav>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
