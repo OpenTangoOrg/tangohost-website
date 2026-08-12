@@ -3,8 +3,8 @@
   --bg-alt: #f5f6f8;
   --text: #16181d;
   --text-muted: #565d6b;
-  --accent: #cc4b2c;
-  --accent-hover: #a83b21;
+  --accent: #ed6558;
+  --accent-hover: #c85449;
   --border: #e3e5e9;
   --radius: 10px;
   --max-width: 1080px;
@@ -16,8 +16,8 @@
     --bg-alt: #1b1e24;
     --text: #eef0f3;
     --text-muted: #9aa1ad;
-    --accent: #e8663f;
-    --accent-hover: #f0805f;
+    --accent: #ff806a;
+    --accent-hover: #ff9a86;
     --border: #2a2d34;
   }
 }
