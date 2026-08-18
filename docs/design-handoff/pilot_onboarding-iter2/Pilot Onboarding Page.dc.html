@@ -1,78 +1,52 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cincoh 5 Pilot — Connectango</title>
-  <meta name="description" content="Getting started guide for Connectango Cincoh 5 pilot testers." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    /*
-      This page carries its own finished visual design (warm cream /
-      terracotta / Fraunces+Work Sans) from the pilot onboarding handoff.
-      Scoping the shared tokens here — rather than editing css/styles.css —
-      lets the shared header/footer pick up the same palette on this page
-      without changing how they look anywhere else on the site.
-    */
-    :root {
-      --bg: oklch(97% 0.015 65);
-      --bg-alt: oklch(96% 0.012 75);
-      --text: oklch(20% 0.02 75);
-      --text-muted: oklch(42% 0.02 75);
-      --accent: #ED6558;
-      --accent-hover: oklch(54.6% 0.182 24.1);
-      --border: oklch(90% 0.015 75);
-    }
-
-    body {
-      font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    .testing-list li::marker {
-      color: var(--accent);
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="logo" href="index.html">Connectango</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about-app.html">Product</a>
-        <a href="about-us.html">About</a>
-        <a href="cincoh5pilot.html" aria-current="page">Cincoh 5 Pilot</a>
-      </nav>
-    </div>
-  </header>
+<x-dc>
 
-  <main>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>body { margin:0; background:oklch(98% 0.012 75); }
+  a { color:#C1663D; } a:hover { color:oklch(48% 0.14 40); }</style>
+</helmet>
 
 <div style="max-width:1000px; margin:0 auto; padding:100px 40px 120px;">
 
   <div style="text-align:center;">
-    <div style="font-family:'Work Sans',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent);">Chicago CincOH 5th · Pilot Testers</div>
+    <div style="font-family:'Work Sans',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#C1663D;">Chicago CincOH 5th · Pilot Testers</div>
     <div style="font-family:'Fraunces',serif; font-size:52px; font-weight:700; color:oklch(20% 0.02 75); margin-top:16px; letter-spacing:-0.01em;">Getting started with the app</div>
     <div style="font-family:'Work Sans',sans-serif; font-size:19px; color:oklch(42% 0.02 75); margin-top:18px; max-width:600px; margin-left:auto; margin-right:auto; line-height:1.5;">Thanks for helping us test! Follow these steps to get set up before the event.</div>
   </div>
 
-  <div style="margin-top:80px;">
-    <div style="font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:oklch(20% 0.02 75); letter-spacing:-0.01em;">What we're testing</div>
-    <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:14px; line-height:1.5;">This app is designed to help tango travelers:</div>
-    <ul class="testing-list" style="margin:14px 0 0; padding-left:20px; font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); line-height:1.6;">
-      <li style="margin-bottom:4px;">Find someone to share a ride with, when you're traveling at the same time.</li>
-      <li style="margin-bottom:4px;">Find someone to share a hotel room or Airbnb.</li>
-      <li style="margin-bottom:4px;">Find a local host, or host a visiting dancer.</li>
-      <li>Find a partner to register for an event that requires couples registration.</li>
-    </ul>
-    <div style="font-family:'Work Sans',sans-serif; font-size:17px; font-weight:700; color:oklch(20% 0.02 75); margin-top:26px;">For this pilot:</div>
-    <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:10px; line-height:1.5;">Our main focus is testing <strong style="color:oklch(20% 0.02 75);">ride sharing</strong>, so we'd love for everyone to try creating rides, finding travel companions, and sending requests.</div>
-    <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:12px; line-height:1.5;">You can also explore <strong style="color:oklch(20% 0.02 75);">room sharing</strong> if you'd like, although we'll mostly be pretending, since most of you have probably already arranged your accommodations for this event!</div>
-    <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:12px; line-height:1.5;">The <strong style="color:oklch(20% 0.02 75);">hosting</strong> and <strong style="color:oklch(20% 0.02 75);">registration partner</strong> features are part of our roadmap, but they're <strong style="color:oklch(20% 0.02 75);">not implemented yet</strong> in this pilot. You may see hosting-related screens or buttons, but be aware that these are not connected to our database yet.</div>
+  <div style="font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:oklch(20% 0.02 75); letter-spacing:-0.01em; margin-top:80px;">What we're testing</div>
+  <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:14px; line-height:1.5;">This app is designed to help tango travelers:</div>
+  <div style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="flex-shrink:0; width:6px; height:6px; border-radius:50%; background:#C1663D; margin-top:9px;"></div>
+      <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); line-height:1.5;">Find someone to share a ride with, when you're traveling at the same time.</div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="flex-shrink:0; width:6px; height:6px; border-radius:50%; background:#C1663D; margin-top:9px;"></div>
+      <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); line-height:1.5;">Find someone to share a hotel room or Airbnb.</div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="flex-shrink:0; width:6px; height:6px; border-radius:50%; background:#C1663D; margin-top:9px;"></div>
+      <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); line-height:1.5;">Find a local host, or host a visiting dancer.</div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="flex-shrink:0; width:6px; height:6px; border-radius:50%; background:#C1663D; margin-top:9px;"></div>
+      <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); line-height:1.5;">Find a partner to register for an event that requires couples registration.</div>
+    </div>
   </div>
+  <div style="font-family:'Work Sans',sans-serif; font-size:17px; font-weight:700; color:oklch(20% 0.02 75); margin-top:26px;">For this pilot:</div>
+  <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:10px; line-height:1.5;">Our main focus is testing <strong style="color:oklch(20% 0.02 75);">ride sharing</strong>, so we'd love for everyone to try creating rides, finding travel companions, and sending requests.</div>
+  <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:12px; line-height:1.5;">You can also explore <strong style="color:oklch(20% 0.02 75);">room sharing</strong> if you'd like, although we'll mostly be pretending, since most of you have probably already arranged your accommodations for this event!</div>
+  <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:12px; line-height:1.5;">The <strong style="color:oklch(20% 0.02 75);">hosting</strong> and <strong style="color:oklch(20% 0.02 75);">registration partner</strong> features are part of our roadmap, but they're <strong style="color:oklch(20% 0.02 75);">not implemented yet</strong> in this pilot. You may see hosting-related screens or buttons, but be aware that these are not connected to our database yet.</div>
 
   <div style="font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:oklch(20% 0.02 75); letter-spacing:-0.01em; margin-top:64px;">Getting set up</div>
   <div style="font-family:'Work Sans',sans-serif; font-size:15px; font-weight:600; color:oklch(50% 0.02 75); margin-top:6px;">Requires an iOS device (iPhone).</div>
@@ -81,7 +55,7 @@
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">1</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">1</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Go to the app &amp; log in</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Open the app using the link and credentials that you received by email. You can reset your password right away, by going to the hamburger menu, then under "Personal Info."</div>
       </div>
@@ -94,14 +68,14 @@
           <div style="font-family:'Work Sans',sans-serif; font-size:7px; color:oklch(50% 0.02 75); margin-bottom:4px;">Ride shares &amp; room shares for tango trips</div>
           <div style="width:100%; padding:8px 9px; border-radius:7px; background:oklch(92% 0.015 60); font-family:'Work Sans',sans-serif; font-size:9px; color:oklch(60% 0.02 75); box-sizing:border-box;">Email</div>
           <div style="width:100%; padding:8px 9px; border-radius:7px; background:oklch(92% 0.015 60); font-family:'Work Sans',sans-serif; font-size:9px; color:oklch(60% 0.02 75); box-sizing:border-box;">Password</div>
-          <div style="width:100%; text-align:center; padding:9px; border-radius:20px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:10.5px; font-weight:700; margin-top:6px; box-sizing:border-box;">Sign in</div>
+          <div style="width:100%; text-align:center; padding:9px; border-radius:20px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:10.5px; font-weight:700; margin-top:6px; box-sizing:border-box;">Sign in</div>
         </div>
       </div>
     </div>
 
     <div style="display:flex; align-items:flex-start; gap:24px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">2</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">2</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Bookmark it on your phone</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Tap Share, then "Add to Home Screen", then confirm. After that, it will pretty much look and feel like a native app.</div>
       </div>
@@ -198,26 +172,26 @@
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">3</div>
-        <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Join the CincOH event</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">3</div>
+        <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Join the CinciOH event</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Tap the "Create New Trip" button, locate "CincOH", and tap on it.</div>
       </div>
       <div style="flex-shrink:0; width:230px; aspect-ratio:390/844; box-sizing:border-box; background:oklch(96% 0.012 75); border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.1); border:5px solid #1a1a1a; overflow:hidden; display:flex; flex-direction:column; position:relative;">
         <div style="padding:14px 9px 0; flex:1; display:flex; flex-direction:column;">
           <div style="display:flex; align-items:center; justify-content:space-between;">
             <div style="font-family:'Fraunces',serif; font-size:15px; font-weight:700; color:oklch(20% 0.02 75);">My Trips</div>
-            <div style="font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700; color:var(--accent);">Edit</div>
+            <div style="font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700; color:#C1663D;">Edit</div>
           </div>
           <div style="margin-top:9px; padding:7px 9px; background:oklch(93% 0.02 75); border-radius:8px; font-family:'Work Sans',sans-serif; font-size:8px; color:oklch(60% 0.02 75);">🔍 Search trips by name</div>
           <div style="flex:1; display:flex; align-items:center; justify-content:center; text-align:center; padding:0 8px;">
             <div style="font-family:'Work Sans',sans-serif; font-size:9px; color:oklch(55% 0.02 75);">You haven't joined any trips yet.</div>
           </div>
-          <div style="margin-bottom:10px; padding:9px; text-align:center; background:var(--accent); border-radius:10px; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700; color:#fff;">+ Create new trip</div>
+          <div style="margin-bottom:10px; padding:9px; text-align:center; background:#C1663D; border-radius:10px; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700; color:#fff;">+ Create new trip</div>
         </div>
         <div style="background:#fff; border-top:1px solid oklch(93% 0.015 75); display:flex; align-items:center; justify-content:space-around; padding:9px 0; position:relative;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"></path></svg>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg>
-          <div style="width:26px; height:26px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; box-shadow:0 0 0 4px oklch(97% 0.02 40);">+</div>
+          <div style="width:26px; height:26px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; box-shadow:0 0 0 4px oklch(97% 0.02 40);">+</div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><path d="M3 5h18M3 12h18M3 19h18"></path></svg>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
         </div>
@@ -226,7 +200,7 @@
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">4</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">4</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Enter your ride from the airport to the venue</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button at the bottom of the screen, and select "Find Ride". Enter the details for your ride (O'Hare Airport to Epiphany Center of the Arts, maybe), date and departing time.<br><br>At any time you can check here, the app will show you which other attendees are looking for a ride around the same time. You can invite them to share a Taxi/Uber, or you may receive an invitation. Invitations also show in your activity menu — the rightmost option in the bottom bar of the "My Trips" screen.</div>
       </div>
@@ -247,7 +221,7 @@
         <div style="background:#fff; border-top:1px solid oklch(93% 0.015 75); display:flex; align-items:center; justify-content:space-around; padding:9px 0; position:relative;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"></path></svg>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg>
-          <div style="width:26px; height:26px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; box-shadow:0 0 0 4px oklch(97% 0.02 40);">+</div>
+          <div style="width:26px; height:26px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; box-shadow:0 0 0 4px oklch(97% 0.02 40);">+</div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><path d="M3 5h18M3 12h18M3 19h18"></path></svg>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(55% 0.02 75)" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
         </div>
@@ -260,7 +234,7 @@
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">5</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">5</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Create your return ride</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Same process to enter your ride. Discover and coordinate with other people going to the airport around the same time.</div>
       </div>
@@ -274,7 +248,7 @@
           <div style="font-family:'Fraunces',serif; font-size:13px; font-weight:700; color:oklch(20% 0.02 75);">cincOH 5th edition</div>
           <div style="font-family:'Work Sans',sans-serif; font-size:6.5px; color:oklch(50% 0.02 75); margin-top:2px;">Aug 28 – 30, 2026 · Epiphany Center for the Arts in Chicago</div>
           <div style="display:flex; gap:5px; margin-top:7px;">
-            <div style="flex:1; text-align:center; padding:5px; border-radius:999px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700;">Rides</div>
+            <div style="flex:1; text-align:center; padding:5px; border-radius:999px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700;">Rides</div>
             <div style="flex:1; text-align:center; padding:5px; border-radius:999px; background:oklch(93% 0.02 75); color:oklch(30% 0.02 75); font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700;">Rooms</div>
           </div>
           <div style="margin-top:8px; padding:7px; background:#fff; border-radius:9px; box-shadow:0 1px 6px rgba(0,0,0,0.05);">
@@ -305,7 +279,7 @@
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">6</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">6</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Add your Facebook profile link</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Go to the Facebook app, and behind the hamburger icon, locate "Copy profile link", and click it. Then in this app, go to your account settings, open "Personal Info", and paste the link to your Facebook profile. When you match with someone for a ride or a room, you can check each other's Facebook profile before deciding whether to connect. If you need to communicate, you can also message each other through Facebook Messenger.</div>
       </div>
@@ -328,16 +302,16 @@
         <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase; color:oklch(45% 0.02 75); margin-bottom:4px;">Password &amp; security</div>
         <div style="display:flex; align-items:center; justify-content:space-between; padding:7px 8px; border:1px solid oklch(88% 0.015 75); border-radius:7px; margin-bottom:8px;">
           <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:600; color:oklch(20% 0.02 75);">Change password</div>
-          <div style="font-family:'Work Sans',sans-serif; font-size:7px; font-weight:700; color:var(--accent);">Reset</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:7px; font-weight:700; color:#C1663D;">Reset</div>
         </div>
-        <div style="text-align:center; padding:8px; border-radius:7px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:10px; font-weight:700;">Save</div>
+        <div style="text-align:center; padding:8px; border-radius:7px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:10px; font-weight:700;">Save</div>
         <div style="flex:1;"></div>
       </div>
     </div>
 
     <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">7</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">7</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Create a room share</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button and select "Offer a room share". Enter the details there.<br><br>"Offer a Room Share" is for when you've already booked a room and are looking for someone to share it with.<br><br>"Find a Room" is for when you haven't booked a room yet and are looking for someone to book one with together.</div>
       </div>
@@ -349,7 +323,7 @@
         <div style="padding:6px 7px; background:oklch(94% 0.03 75); border-radius:7px; font-family:'Work Sans',sans-serif; font-size:8px; color:oklch(65% 0.02 75);">Check-out date</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:6.5px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase; color:oklch(50% 0.02 75); margin-top:3px;">Type</div>
         <div style="display:flex; gap:5px;">
-          <div style="padding:5px 9px; border-radius:999px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:8px; font-weight:700;">Airbnb</div>
+          <div style="padding:5px 9px; border-radius:999px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:8px; font-weight:700;">Airbnb</div>
           <div style="padding:5px 9px; border-radius:999px; background:oklch(94% 0.03 75); color:oklch(30% 0.02 75); font-family:'Work Sans',sans-serif; font-size:8px; font-weight:700;">Hotel</div>
         </div>
         <div style="padding:6px 7px; background:oklch(94% 0.03 75); border-radius:7px; font-family:'Work Sans',sans-serif; font-size:7px; color:oklch(65% 0.02 75); margin-top:2px;">Place (e.g. Hotel Ibis, San Telmo)</div>
@@ -357,14 +331,14 @@
         <div style="flex:1;"></div>
         <div style="display:flex; gap:6px;">
           <div style="flex:1; text-align:center; padding:7px; border-radius:7px; background:oklch(94% 0.03 75); color:oklch(30% 0.02 75); font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700;">Cancel</div>
-          <div style="flex:1; text-align:center; padding:7px; border-radius:7px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700;">Add</div>
+          <div style="flex:1; text-align:center; padding:7px; border-radius:7px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700;">Add</div>
         </div>
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">8</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">8</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Or join a room share</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button and select "Find a room". Enter your dates there. You'll see people who have a room to share at the same time. You'll also see other people looking to share a room.</div>
       </div>
@@ -392,7 +366,7 @@
                 <div style="font-family:'Work Sans',sans-serif; font-size:8px; font-weight:700; color:oklch(20% 0.02 75);">Tyler</div>
                 <div style="flex-shrink:0; padding:2px 6px; border-radius:999px; background:oklch(90% 0.08 145); font-family:'Work Sans',sans-serif; font-size:6px; font-weight:700; color:oklch(35% 0.1 145);">Open</div>
               </div>
-              <div style="font-family:'Work Sans',sans-serif; font-size:6.5px; color:var(--accent); font-weight:600; margin-top:1px;">Poreč, Istria</div>
+              <div style="font-family:'Work Sans',sans-serif; font-size:6.5px; color:#C1663D; font-weight:600; margin-top:1px;">Poreč, Istria</div>
               <div style="font-family:'Work Sans',sans-serif; font-size:6.5px; color:oklch(55% 0.02 75); margin-top:1px;">2 of 3 beds available</div>
             </div>
           </div>
@@ -413,16 +387,16 @@
         </div>
         <div style="flex:1;"></div>
         <div style="display:flex; justify-content:center; gap:5px; margin-top:6px;">
-          <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700; color:var(--accent);">Edit Room</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700; color:#C1663D;">Edit Room</div>
           <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; color:oklch(55% 0.02 75);">·</div>
           <div style="font-family:'Work Sans',sans-serif; font-size:7.5px; font-weight:700; color:oklch(45% 0.15 25);">Cancel room</div>
         </div>
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
+    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
       <div style="flex:1;">
-        <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">9</div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#C1663D; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">9</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Look someone up on Facebook</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">If you see someone who you could share a room or ride with, click on their name and you should see a button that takes you to their profile page on FB.</div>
       </div>
@@ -445,7 +419,7 @@
           <div style="font-family:'Work Sans',sans-serif; font-size:8px; font-weight:700; color:oklch(20% 0.02 75);">View Facebook profile</div>
         </div>
         <div style="flex:1;"></div>
-        <div style="width:100%; text-align:center; padding:9px; border-radius:7px; background:var(--accent); color:#fff; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700;">Request to share ride</div>
+        <div style="width:100%; text-align:center; padding:9px; border-radius:7px; background:#C1663D; color:#fff; font-family:'Work Sans',sans-serif; font-size:9px; font-weight:700;">Request to share ride</div>
       </div>
     </div>
 
@@ -458,17 +432,6 @@
 
 </div>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; 2026 Connectango. All rights reserved.</span>
-      <nav>
-        <a href="terms.html">Terms of Use</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+</x-dc>
 </body>
 </html>
