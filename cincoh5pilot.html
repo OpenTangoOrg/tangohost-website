@@ -33,6 +33,22 @@
     .testing-list li::marker {
       color: var(--accent);
     }
+
+    @media (max-width: 720px) {
+      .pilot-container {
+        padding: 60px 20px 80px !important;
+      }
+      .pilot-hero-title {
+        font-size: 38px !important;
+      }
+      .step-row {
+        flex-direction: column-reverse !important;
+      }
+      .step-text {
+        flex: none !important;
+        width: 100% !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,11 +67,11 @@
 
   <main>
 
-<div style="max-width:1000px; margin:0 auto; padding:100px 40px 120px;">
+<div class="pilot-container" style="max-width:1000px; margin:0 auto; padding:100px 40px 120px;">
 
   <div style="text-align:center;">
     <div style="font-family:'Work Sans',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent);">Chicago CincOH 5th · Pilot Testers</div>
-    <div style="font-family:'Fraunces',serif; font-size:52px; font-weight:700; color:oklch(20% 0.02 75); margin-top:16px; letter-spacing:-0.01em;">Getting started with the app</div>
+    <div class="pilot-hero-title" style="font-family:'Fraunces',serif; font-size:52px; font-weight:700; color:oklch(20% 0.02 75); margin-top:16px; letter-spacing:-0.01em;">Getting started with the app</div>
     <div style="font-family:'Work Sans',sans-serif; font-size:19px; color:oklch(42% 0.02 75); margin-top:18px; max-width:600px; margin-left:auto; margin-right:auto; line-height:1.5;">Thanks for helping us test! Follow these steps to get set up before the event.</div>
   </div>
 
@@ -79,8 +95,8 @@
 
   <div style="display:flex; flex-direction:column; gap:0; margin-top:16px;">
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">1</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Go to the app &amp; log in</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Open the app using the link and credentials that you received by email. You can reset your password right away, by going to the hamburger menu, then under "Personal Info."</div>
@@ -99,8 +115,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:24px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:24px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">2</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Bookmark it on your phone </div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">This only works with Safari, not Chrome. Tap Share, then "Add to Home Screen", then confirm. After that, it will pretty much look and feel like a native app.</div>
@@ -196,8 +212,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">3</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Join the CincOH event</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Tap the "Create New Trip" button, locate "CincOH", and tap on it.</div>
@@ -224,8 +240,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">4</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Enter your ride from the airport to the venue</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button at the bottom of the screen, and select "Find Ride". Enter the details for your ride (O'Hare Airport to Epiphany Center of the Arts, maybe), date and departing time.<br><br>At any time you can check here, the app will show you which other attendees are looking for a ride around the same time. You can invite them to share a Taxi/Uber, or you may receive an invitation. Invitations also show in your activity menu — the rightmost option in the bottom bar of the "My Trips" screen.</div>
@@ -258,8 +274,8 @@
 
   <div style="display:flex; flex-direction:column; gap:0; margin-top:16px;">
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">5</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Create your return ride</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Same process to enter your ride. Discover and coordinate with other people going to the airport around the same time.</div>
@@ -303,8 +319,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">6</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Add your Facebook profile link</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">Go to the Facebook app, go to your Profile, go to the 3 dots icon in the upper right corner, locate "Copy profile link", and click it. Then in this app, go to your account settings, open "Personal Info", and paste the link to your Facebook profile. When you match with someone for a ride or a room, you can check each other's Facebook profile before deciding whether to connect. If you need to communicate, you can also message each other through Facebook Messenger.</div>
@@ -335,8 +351,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">7</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Create a room share</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button and select "Offer a room share". Enter the details there.<br><br>"Offer a Room Share" is for when you've already booked a room and are looking for someone to share it with.<br><br>"Find a Room" is for when you haven't booked a room yet and are looking for someone to book one with together.</div>
@@ -362,8 +378,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">8</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Or join a room share</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">In the "My Trips" screen, tap the + button and select "Find a room". Enter your dates there. You'll see people who have a room to share at the same time. You'll also see other people looking to share a room.</div>
@@ -420,8 +436,8 @@
       </div>
     </div>
 
-    <div style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
-      <div style="flex:1;">
+    <div class="step-row" style="display:flex; align-items:flex-start; gap:40px; padding:32px 0; border-top:1px solid oklch(90% 0.015 75); border-bottom:1px solid oklch(90% 0.015 75);">
+      <div class="step-text" style="flex:1;">
         <div style="width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:16px; font-weight:700;">9</div>
         <div style="font-family:'Fraunces',serif; font-size:24px; font-weight:700; color:oklch(20% 0.02 75); margin-top:14px;">Look someone up on Facebook</div>
         <div style="font-family:'Work Sans',sans-serif; font-size:17px; color:oklch(42% 0.02 75); margin-top:8px; line-height:1.5;">If you see someone who you could share a room or ride with, click on their name and you should see a button that takes you to their profile page on FB.</div>
