@@ -41,7 +41,7 @@
     }
 
     .about-hero {
-      padding: 110px 40px 90px;
+      padding: 110px 40px 20px;
       text-align: center;
     }
 
@@ -70,6 +70,16 @@
       margin: 22px auto 0;
       max-width: 620px;
       line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .about-pitch {
+      font-size: 19px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
       text-wrap: pretty;
     }
 
@@ -240,7 +250,7 @@
 
     @media (max-width: 640px) {
       .about-hero {
-        padding: 72px 24px 56px;
+        padding: 72px 24px 16px;
       }
 
       .about-hero h1 {
@@ -285,7 +295,12 @@
     <section class="about-hero">
       <div class="about-eyebrow">Connectango</div>
       <h1>Travel more, together.</h1>
-      <p>Connectango connects dancers whose journeys overlap, so the practical parts of a trip — the ride, the room — get easier to sort out.</p>
+    </section>
+
+    <section class="about-band" style="padding-top: 20px;">
+      <div class="about-band-inner">
+        <p class="about-pitch">Every tango dancer knows the feeling: you've found the perfect festival or milonga in another city, but you're stuck figuring out where to stay, how to get there, and who you can trust. Connectango is a community-built home for tango dancers around the world to share housing, rides, and local knowledge. Every member is vetted by their peers and reviewed by the people they've hosted, driven, or helped, so you can connect with confidence. And it's donation-supported, so it's free for everyone. No fees, no barriers, just dancers helping dancers.</p>
+      </div>
     </section>
 
     <section class="about-band" style="background: var(--bg-alt);">
@@ -296,22 +311,22 @@
             <div class="about-value-icon">
               <svg width="22" height="22" viewBox="0 0 24 24"><path d="M19.75 6.32c-.18-.53-.68-.87-1.25-.87H5.5c-.57 0-1.07.34-1.25.87L3 10v7c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-7l-1.25-3.68ZM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15Zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5ZM5 10l1.13-3.5h11.74L19 10H5Z" fill="var(--accent)"></path></svg>
             </div>
-            <h3>Travel more, spend less</h3>
-            <p>A shared taxi and a shared room turn a trip you were weighing into a trip you take.</p>
+            <h3>Travel more</h3>
+            <p>Travelling for tango can get really expensive. Find people you trust to share a Uber, or share a hotel room.</p>
           </div>
           <div class="about-value">
             <div class="about-value-icon">
               <svg width="22" height="22" viewBox="0 0 24 24"><path d="M16.5 9a3.5 3.5 0 1 0-3.4-4.3A3.5 3.5 0 1 0 9 9a3.5 3.5 0 0 0 3.5-1.03A3.49 3.49 0 0 0 16.5 9ZM8.5 11c-2.33 0-7 1.17-7 3.5V17h7.5c-.32-.61-.5-1.29-.5-2 0-1.9 1.28-3.5 3-3.98C10.85 10.2 9.6 11 8.5 11Zm7.5 1c-2.33 0-7 1.17-7 3.5V17h14v-1.5c0-2.33-4.67-3.5-7-3.5Z" fill="var(--accent)"></path></svg>
             </div>
-            <h3>Arrive knowing someone</h3>
-            <p>Reconnect with old friends, meet new ones — the ride from the airport is where it starts.</p>
+            <h3>Give back to the community</h3>
+            <p>Have a spare room and want to help another dancer? Become a host. Or offer a ride to a visiting (or local) dancer.</p>
           </div>
           <div class="about-value">
             <div class="about-value-icon">
               <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--accent)" stroke-width="1.9"></circle><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" fill="none" stroke="var(--accent)" stroke-width="1.5"></path></svg>
             </div>
-            <h3>Travel changes you</h3>
-            <p>New cities, new floors, new people. Going further widens what you think is possible.</p>
+            <h3>Share knowledge</h3>
+            <p>Connect with peer dancers who know the local scene.</p>
           </div>
         </div>
       </div>
@@ -351,33 +366,33 @@
 
     <section class="about-band about-dark">
       <div class="about-band-inner">
-        <div class="about-dark-eyebrow">Controlled visibility</div>
-        <h2>Only see what you need to see.</h2>
+        <div class="about-dark-eyebrow">Search what you need</div>
+        <h2>Find the right people.</h2>
         <p>Coordinating travel shouldn't mean broadcasting your plans to a whole group chat.</p>
         <div class="about-dark-grid">
           <div class="about-dark-card">
-            <h3>You're visible to the right people</h3>
-            <p>Only the people looking for the same thing, at the same time, see that you're looking too.</p>
+            <h3>Get connected with the right people</h3>
+            <p>The app will connect you with the people whose plans overlap with yours.</p>
           </div>
           <div class="about-dark-card">
-            <h3>Hosts stay in control</h3>
-            <p>You decide who sees your details, and when. Your address isn't a public listing.</p>
+            <h3>Hosts choose when they're visible</h3>
+            <p>You decide who sees your details, and when. Choose who you are comfortable hosting.</p>
           </div>
           <div class="about-dark-card">
             <h3>Tap to answer</h3>
             <p>Accept or decline in one tap. Less typing, fewer threads to keep up with.</p>
           </div>
           <div class="about-dark-card">
-            <h3>Say no without explaining</h3>
-            <p>Declining is a button, not a conversation. No reason required, no awkwardness.</p>
+            <h3>Peer vetting and reviews</h3>
+            <p>Connect with people you trust.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="about-cta">
-      <h2>Going somewhere soon?</h2>
-      <p>Add your trip and see who else is on their way.</p>
+      <h2>Want to know more about our app?</h2>
+      <p>Want to try it? We'd love to hear from you. We are always looking for feedback as we are building the app.</p>
       <a class="btn btn-primary" href="mailto:support@opentango.org?subject=Connectango%20Beta">Join our beta</a>
     </section>
 
