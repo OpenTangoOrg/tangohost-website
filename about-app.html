@@ -25,23 +25,48 @@
       --accent: #ED6558;
       --accent-hover: oklch(52% 0.16 30);
       --border: oklch(90% 0.015 75);
+
+      /* Layout tokens: one content width, one gutter, one section rhythm. */
+      --about-max: 1040px;
+      --about-gutter: 40px;
+      --about-band-y: 96px;
+      --about-measure: 64ch;
     }
 
     body {
       font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
+    /* ---------- Bands ---------- */
+
     .about-band {
-      padding: 90px 40px;
+      padding: var(--about-band-y) var(--about-gutter);
+    }
+
+    .about-band--alt {
+      background: var(--bg-alt);
     }
 
     .about-band-inner {
-      max-width: 1040px;
+      max-width: var(--about-max);
       margin: 0 auto;
     }
 
+    .about-section-heading {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(28px, 2.2vw + 14px, 36px);
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      margin: 0;
+      text-wrap: balance;
+    }
+
+    /* ---------- Hero (headline + pitch together) ---------- */
+
     .about-hero {
-      padding: 110px 40px 20px;
+      padding: 112px var(--about-gutter) var(--about-band-y);
       text-align: center;
     }
 
@@ -55,108 +80,76 @@
 
     .about-hero h1 {
       font-family: 'Fraunces', serif;
-      font-size: 60px;
+      font-size: clamp(40px, 5vw + 12px, 64px);
       font-weight: 700;
       color: var(--text);
       margin: 18px 0 0;
       letter-spacing: -0.015em;
-      line-height: 1.08;
-      text-wrap: pretty;
-    }
-
-    .about-hero p {
-      font-size: 20px;
-      color: var(--text-muted);
-      margin: 22px auto 0;
-      max-width: 620px;
-      line-height: 1.6;
-      text-wrap: pretty;
+      line-height: 1.06;
+      text-wrap: balance;
     }
 
     .about-pitch {
-      font-size: 19px;
+      font-size: clamp(17px, 0.4vw + 15px, 19px);
       color: var(--text-muted);
       line-height: 1.7;
-      max-width: 760px;
-      margin: 0 auto;
-      text-align: center;
+      max-width: var(--about-measure);
+      margin: 32px auto 0;
       text-wrap: pretty;
     }
 
-    .about-section-heading {
-      font-family: 'Fraunces', serif;
-      font-size: 34px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.01em;
-      margin: 0;
-    }
+    /* ---------- Why we built it: prose + pull quote ---------- */
 
-    .about-values {
+    .about-split {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      margin-top: 36px;
-    }
-
-    .about-value-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      background: oklch(94% 0.04 40);
-      display: flex;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: 56px;
       align-items: center;
-      justify-content: center;
-    }
-
-    .about-value h3 {
-      font-family: 'Fraunces', serif;
-      font-size: 21px;
-      font-weight: 700;
-      color: var(--text);
-      margin: 16px 0 0;
-    }
-
-    .about-value p {
-      font-size: 16.5px;
-      color: var(--text-muted);
-      margin: 8px 0 0;
-      line-height: 1.6;
-      text-wrap: pretty;
-    }
-
-    .about-do-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
       margin-top: 32px;
     }
 
-    .about-do-card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 26px 28px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.03);
+    .about-prose {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      text-wrap: pretty;
+      margin: 0;
+      max-width: var(--about-measure);
     }
 
-    .about-do-card h3 {
-      font-family: 'Fraunces', serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text);
+    .about-prose + .about-prose {
+      margin-top: 16px;
+    }
+
+    .about-highlight {
+      background: oklch(94% 0.04 40);
+      border-left: 4px solid var(--accent);
+      border-radius: 16px;
+      padding: 28px 30px;
       margin: 0;
     }
 
-    .about-do-card p {
-      font-size: 16px;
-      color: var(--text-muted);
-      margin: 7px 0 0;
-      line-height: 1.55;
+    .about-highlight p {
+      font-family: 'Fraunces', serif;
+      font-size: 21px;
+      color: oklch(38% 0.1 30);
+      font-weight: 600;
+      line-height: 1.45;
       text-wrap: pretty;
+      margin: 0;
     }
+
+    /* ---------- Dark band: heading left, copy right ---------- */
 
     .about-dark {
       background: #6B4A40;
+    }
+
+    .about-dark-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      gap: 56px;
+      align-items: start;
     }
 
     .about-dark-eyebrow {
@@ -169,76 +162,105 @@
 
     .about-dark h2 {
       font-family: 'Fraunces', serif;
-      font-size: 34px;
+      font-size: clamp(28px, 2.2vw + 14px, 36px);
       font-weight: 700;
       color: oklch(97% 0.01 75);
       margin: 14px 0 0;
       letter-spacing: -0.01em;
-      max-width: 700px;
       line-height: 1.15;
-      text-wrap: pretty;
+      text-wrap: balance;
     }
 
-    .about-dark > .about-band-inner > p {
+    .about-dark-copy p {
       font-size: 18px;
-      color: oklch(78% 0.02 75);
-      margin: 16px 0 0;
-      max-width: 640px;
+      color: oklch(82% 0.02 75);
+      margin: 0;
       line-height: 1.6;
       text-wrap: pretty;
     }
 
-    .about-dark-grid {
+    .about-dark-copy p + p {
+      margin-top: 16px;
+    }
+
+    /* Optical alignment: start the copy level with the headline, not the eyebrow. */
+    .about-dark-copy {
+      padding-top: 34px;
+    }
+
+    /* ---------- What you can do: 3 × 2 card grid ---------- */
+
+    .about-do-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 40px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin: 32px 0 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .about-dark-card {
-      border: 1px solid oklch(38% 0.03 40);
-      border-radius: 18px;
-      padding: 24px 26px;
+    .about-do-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.03);
     }
 
-    .about-dark-card h3 {
+    .about-do-card h3 {
       font-family: 'Fraunces', serif;
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 700;
-      color: oklch(97% 0.01 75);
+      color: var(--text);
+      line-height: 1.25;
       margin: 0;
     }
 
-    .about-dark-card p {
-      font-size: 15.5px;
-      color: oklch(76% 0.02 75);
-      margin: 7px 0 0;
+    .about-do-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin: 8px 0 0;
       line-height: 1.55;
       text-wrap: pretty;
     }
 
+    /* ---------- CTA ---------- */
+
     .about-cta {
-      padding: 100px 40px 130px;
+      padding: var(--about-band-y) var(--about-gutter) 128px;
+    }
+
+    .about-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
       text-align: center;
+      background: var(--bg-alt);
+      border-radius: 24px;
+      padding: 56px 48px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.03);
     }
 
     .about-cta h2 {
       font-family: 'Fraunces', serif;
-      font-size: 40px;
+      font-size: clamp(30px, 2.6vw + 16px, 40px);
       font-weight: 700;
       color: var(--text);
       margin: 0;
       letter-spacing: -0.01em;
-      text-wrap: pretty;
+      line-height: 1.15;
+      text-wrap: balance;
     }
 
     .about-cta p {
       font-size: 18px;
       color: var(--text-muted);
-      margin: 16px auto 0;
-      max-width: 520px;
+      margin: 12px auto 0;
+      max-width: 500px;
       line-height: 1.6;
       text-wrap: pretty;
+    }
+
+    .about-cta h2 + p {
+      margin-top: 18px;
     }
 
     .about-cta .btn-primary {
@@ -248,31 +270,79 @@
       font-size: 16.5px;
     }
 
-    @media (max-width: 640px) {
-      .about-hero {
-        padding: 72px 24px 16px;
+    /* ---------- Tablet ---------- */
+
+    @media (max-width: 960px) {
+      :root {
+        --about-band-y: 80px;
       }
 
-      .about-hero h1 {
-        font-size: 38px;
+      .about-do-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .about-band {
-        padding: 56px 24px;
+      .about-split,
+      .about-dark-layout {
+        gap: 40px;
       }
+    }
 
-      .about-section-heading {
-        font-size: 26px;
-      }
-
-      .about-values,
-      .about-do-grid,
-      .about-dark-grid {
+    @media (max-width: 800px) {
+      .about-split,
+      .about-dark-layout {
         grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .about-dark-copy {
+        padding-top: 0;
+      }
+    }
+
+    /* ---------- Phone ---------- */
+
+    @media (max-width: 640px) {
+      :root {
+        --about-gutter: 20px;
+        --about-band-y: 60px;
+      }
+
+      .about-hero {
+        padding-top: 64px;
+      }
+
+      .about-pitch {
+        margin-top: 24px;
+      }
+
+      .about-do-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .about-do-card {
+        padding: 22px 22px 24px;
+      }
+
+      .about-highlight {
+        padding: 22px 22px;
+      }
+
+      .about-highlight p {
+        font-size: 19px;
       }
 
       .about-cta {
-        padding: 64px 24px 80px;
+        padding-bottom: 80px;
+      }
+
+      .about-cta-inner {
+        padding: 40px 22px;
+        border-radius: 20px;
+      }
+
+      .about-cta .btn-primary {
+        display: block;
       }
     }
   </style>
@@ -295,105 +365,78 @@
     <section class="about-hero">
       <div class="about-eyebrow">Connectango</div>
       <h1>Travel more, together.</h1>
+      <p class="about-pitch">Every tango dancer knows the feeling: you've found the perfect festival or milonga in another city, but you're stuck figuring out where to stay, how to get there, and who you can trust. Connectango is a community-built home for tango dancers around the world to share housing, rides, and local knowledge. Every member is vetted by their peers and reviewed by the people they've hosted, driven, or helped, so you can connect with confidence. And it's donation-supported, so it's free for everyone. No fees, no barriers, just dancers helping dancers.</p>
     </section>
 
-    <section class="about-band" style="padding-top: 20px;">
+    <section class="about-band about-band--alt" aria-labelledby="why-heading">
       <div class="about-band-inner">
-        <p class="about-pitch">Every tango dancer knows the feeling: you've found the perfect festival or milonga in another city, but you're stuck figuring out where to stay, how to get there, and who you can trust. Connectango is a community-built home for tango dancers around the world to share housing, rides, and local knowledge. Every member is vetted by their peers and reviewed by the people they've hosted, driven, or helped, so you can connect with confidence. And it's donation-supported, so it's free for everyone. No fees, no barriers, just dancers helping dancers.</p>
-      </div>
-    </section>
-
-    <section class="about-band" style="background: var(--bg-alt);">
-      <div class="about-band-inner">
-        <h2 class="about-section-heading">Why we built it</h2>
-        <div class="about-values">
-          <div class="about-value">
-            <div class="about-value-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M19.75 6.32c-.18-.53-.68-.87-1.25-.87H5.5c-.57 0-1.07.34-1.25.87L3 10v7c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-7l-1.25-3.68ZM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15Zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5ZM5 10l1.13-3.5h11.74L19 10H5Z" fill="var(--accent)"></path></svg>
-            </div>
-            <h3>Travel more</h3>
-            <p>Travelling for tango can get really expensive. Find people you trust to share a Uber, or share a hotel room.</p>
+        <h2 class="about-section-heading" id="why-heading">Why we built it</h2>
+        <div class="about-split">
+          <div>
+            <p class="about-prose">Traveling for tango is wonderful, but it can get expensive. Hotels, rental cars, and airport transfers add up quickly, especially when you're traveling alone.</p>
+            <p class="about-prose">Meanwhile, other dancers may be making similar plans, looking for someone to share a ride or a room. Some of them might even be people you've danced with before! And you might even find a local dancer willing to offer you a spare room for your stay.</p>
           </div>
-          <div class="about-value">
-            <div class="about-value-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M16.5 9a3.5 3.5 0 1 0-3.4-4.3A3.5 3.5 0 1 0 9 9a3.5 3.5 0 0 0 3.5-1.03A3.49 3.49 0 0 0 16.5 9ZM8.5 11c-2.33 0-7 1.17-7 3.5V17h7.5c-.32-.61-.5-1.29-.5-2 0-1.9 1.28-3.5 3-3.98C10.85 10.2 9.6 11 8.5 11Zm7.5 1c-2.33 0-7 1.17-7 3.5V17h14v-1.5c0-2.33-4.67-3.5-7-3.5Z" fill="var(--accent)"></path></svg>
-            </div>
-            <h3>Give back to the community</h3>
-            <p>Have a spare room and want to help another dancer? Become a host. Or offer a ride to a visiting (or local) dancer.</p>
-          </div>
-          <div class="about-value">
-            <div class="about-value-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--accent)" stroke-width="1.9"></circle><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" fill="none" stroke="var(--accent)" stroke-width="1.5"></path></svg>
-            </div>
-            <h3>Share knowledge</h3>
-            <p>Connect with peer dancers who know the local scene.</p>
-          </div>
+          <blockquote class="about-highlight">
+            <p>We created Connectango to make these connections easier, so more people can travel, dance, and be part of the tango community.</p>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section class="about-band">
+    <section class="about-band about-dark" aria-labelledby="search-heading">
+      <div class="about-band-inner about-dark-layout">
+        <div>
+          <div class="about-dark-eyebrow">Search what you need</div>
+          <h2 id="search-heading">A smarter, more efficient way to connect</h2>
+        </div>
+        <div class="about-dark-copy">
+          <p>Finding people to share travel arrangements with shouldn't mean posting your plans to an entire Facebook group and hoping the right person sees them.</p>
+          <p>With Connectango, you can search for dancers whose plans match yours and get notified when new matches appear.</p>
+          <p>You decide what to share, who to connect with, and which arrangements feel right for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-band" aria-labelledby="do-heading">
       <div class="about-band-inner">
-        <h2 class="about-section-heading">What you can do</h2>
-        <div class="about-do-grid">
-          <div class="about-do-card">
-            <h3>Share a ride</h3>
-            <p>Post your airport arrival, see who lands near your time, split the taxi.</p>
-          </div>
-          <div class="about-do-card">
+        <h2 class="about-section-heading" id="do-heading">What you can do</h2>
+        <ul class="about-do-grid">
+          <li class="about-do-card">
+            <h3>Share an airport ride</h3>
+            <p>Arriving around the same time as other dancers? Find someone to share a taxi or Uber.</p>
+          </li>
+          <li class="about-do-card">
             <h3>Share a room</h3>
-            <p>Offer a spare bed or find one — hotel or Airbnb, for the nights you need.</p>
-          </div>
-          <div class="about-do-card">
-            <h3>Host, or find a host</h3>
-            <p>Open your home to a visiting dancer, or stay with a local when you travel.</p>
-          </div>
-          <div class="about-do-card">
-            <h3>Offer seats in your car</h3>
-            <p>Driving or renting a car? Post your empty seats and pick up dancers along the way.</p>
-          </div>
-          <div class="about-do-card">
-            <h3>Organizer shuttles</h3>
-            <p>Running a shuttle for your event? Post it so guests can find and book a seat.</p>
-          </div>
-          <div class="about-do-card">
+            <p>Looking for a roommate for a festival? Find someone to split a hotel room or Airbnb with.</p>
+          </li>
+          <li class="about-do-card">
+            <h3>Host or find a host</h3>
+            <p>Have a spare room? Offer hospitality to a visiting dancer. Traveling somewhere new? Connect with local dancers who are open to hosting.</p>
+          </li>
+          <li class="about-do-card">
+            <h3>Share a car ride</h3>
+            <p>Driving to an event or renting a car? Offer your empty seats, or find someone heading in the same direction.</p>
+          </li>
+          <li class="about-do-card">
+            <h3>Find an event shuttle</h3>
+            <p>Event organizers can share shuttle options so dancers can find transportation more easily.</p>
+          </li>
+          <li class="about-do-card">
             <h3>Find a registration partner</h3>
-            <p>For events that require couples registration, find someone to sign up with.</p>
-          </div>
-        </div>
+            <p>Attending an event that requires couples registration? Connect with someone looking for a partner.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="about-band about-dark">
-      <div class="about-band-inner">
-        <div class="about-dark-eyebrow">Search what you need</div>
-        <h2>Find the right people.</h2>
-        <p>Coordinating travel shouldn't mean broadcasting your plans to a whole group chat.</p>
-        <div class="about-dark-grid">
-          <div class="about-dark-card">
-            <h3>Get connected with the right people</h3>
-            <p>The app will connect you with the people whose plans overlap with yours.</p>
-          </div>
-          <div class="about-dark-card">
-            <h3>Hosts choose when they're visible</h3>
-            <p>You decide who sees your details, and when. Choose who you are comfortable hosting.</p>
-          </div>
-          <div class="about-dark-card">
-            <h3>Tap to answer</h3>
-            <p>Accept or decline in one tap. Less typing, fewer threads to keep up with.</p>
-          </div>
-          <div class="about-dark-card">
-            <h3>Peer vetting and reviews</h3>
-            <p>Connect with people you trust.</p>
-          </div>
-        </div>
+    <section class="about-cta" aria-labelledby="cta-heading">
+      <div class="about-cta-inner">
+        <h2 id="cta-heading">Help us build Connectango</h2>
+        <p>We're building Connectango for the tango community, with the help of the tango community.</p>
+        <p>We're inviting dancers to try the app, share feedback, and help us make tango travel more affordable and accessible.</p>
+        <p>Join our beta and help shape what comes next.</p>
+        <a class="btn btn-primary" href="mailto:support@opentango.org?subject=Connectango%20Beta">Join our beta</a>
       </div>
-    </section>
-
-    <section class="about-cta">
-      <h2>Want to know more about our app?</h2>
-      <p>Want to try it? We'd love to hear from you. We are always looking for feedback as we are building the app.</p>
-      <a class="btn btn-primary" href="mailto:support@opentango.org?subject=Connectango%20Beta">Join our beta</a>
     </section>
 
   </main>
