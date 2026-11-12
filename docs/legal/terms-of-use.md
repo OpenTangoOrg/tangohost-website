@@ -70,7 +70,7 @@ When participating in these arrangements, you acknowledge that:
 
 We encourage users to communicate clearly and establish expectations before confirming an arrangement.
 
-## 6. Personal Safety
+## 6. Personal Safety and Assumption of Risk
 
 Your safety matters to us.
 
@@ -78,15 +78,38 @@ While Connectango is designed to support connections within the tango community,
 
 We encourage users to:
 
-- Review available profile information before accepting arrangements
-- Communicate clearly before meeting
-- Share travel plans with someone they trust when appropriate
-- Respect personal boundaries and consent
-- Decline or cancel arrangements if they feel uncomfortable or unsafe
+- Review available profile information before accepting arrangements.
+- Communicate clearly before meeting.
+- Share travel plans with someone they trust when appropriate.
+- Respect personal boundaries and consent.
+- Decline or cancel arrangements if they feel uncomfortable or unsafe.
 
-**You are never obligated to accept a ride, host someone, or share accommodations simply because a connection was made through Connectango.**
+You are never obligated to accept a ride, host someone, or share accommodations simply because a connection was made through Connectango.
 
-By using Connectango, you acknowledge that arranging rides, accommodations, or hospitality with other members involves inherent risks. You are responsible for evaluating these risks and making your own decisions. We encourage you to review our [Personal Safety] guidelines before participating in arrangements.
+### Assumption of Risk
+
+By using Connectango, you acknowledge and understand that interacting with other members and participating in arrangements facilitated through the platform involves inherent and potentially serious risks.
+
+These risks may include, but are not limited to:
+
+- Traffic accidents, personal injury, or death.
+- Theft, property loss, or property damage.
+- Harassment, assault, sexual misconduct, or other harmful behavior.
+- Unsafe, unsuitable, or misrepresented accommodations.
+- Cancellations, disputes, or financial losses.
+- Other unforeseen circumstances arising from interactions with members.
+
+You voluntarily choose whether to participate in arrangements made through Connectango and accept the inherent risks associated with those arrangements.
+
+You acknowledge that Connectango does not conduct background checks, independently verify members' identities, inspect vehicles or accommodations, or guarantee the conduct, intentions, reliability, or safety of members.
+
+Community trust designations, invitations, and event verification badges do not constitute safety certifications or guarantees.
+
+You are responsible for evaluating the risks and suitability of each arrangement and exercising your own judgment.
+
+We encourage you to review our [Personal Safety] guidelines before participating in arrangements.
+
+Nothing in this section waives rights or protections that cannot lawfully be waived.
 
 ## 7. Community Conduct
 
@@ -163,13 +186,21 @@ Users acknowledge that participation in these arrangements involves risks and ag
 
 Nothing in these Terms excludes or limits liability that cannot legally be excluded or limited.
 
-## 13. Account Suspension and Termination
+## 13. Release of Claims
+
+To the fullest extent permitted by applicable law, you agree to release Connectango, its operating legal entity, founders, directors, officers, employees, volunteers, administrators, agents, and representatives (collectively, the "Released Parties") from claims, demands, damages, and liabilities arising from the independent acts or omissions of other members in connection with arrangements facilitated through Connectango.
+
+This release does not apply to claims arising from a Released Party's own gross negligence, reckless or intentional misconduct, fraud, or other conduct for which liability cannot lawfully be excluded or limited.
+
+Nothing in this section prevents users from reporting misconduct, contacting law enforcement, or exercising rights that cannot legally be waived.
+
+## 14. Account Suspension and Termination
 
 We reserve the right to suspend or terminate accounts that violate these Terms, threaten community safety, misuse the platform, or engage in fraudulent or unlawful conduct.
 
 Users may request account deletion by contacting us or using available account management features.
 
-## 14. Changes to These Terms
+## 15. Changes to These Terms
 
 We may update these Terms of Use as Connectango evolves.
 
@@ -179,13 +210,13 @@ For significant changes, we may provide additional notice through the app or by 
 
 Continued use of Connectango after updated terms take effect constitutes acceptance to the extent permitted by applicable law.
 
-## 15. Governing Law
+## 16. Governing Law
 
 These Terms are governed by the laws of the State of Oregon, United States, without regard to conflict-of-law principles, except where applicable law requires otherwise.
 
 Nothing in these Terms limits mandatory consumer rights or other protections that apply in your jurisdiction.
 
-## 16. Contact Us
+## 17. Contact Us
 
 For questions, concerns, or reports of inappropriate behavior, please contact:
 

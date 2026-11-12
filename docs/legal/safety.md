@@ -139,15 +139,15 @@ We cannot guarantee the behavior of members or independently verify every report
 
 ## Understanding the risks
 
-Connectango is a community coordination platform. We facilitate introductions and arrangements between independent members, but we do not operate, supervise, or guarantee the transportation, accommodations, or hospitality offered by members.
+Connectango is a community coordination platform. We help members connect to arrange rides, shared accommodations, and hospitality, but we do not provide or supervise these services.
 
-Participating in arrangements made through Connectango involves risks, including injury, accidents, theft, harassment, assault, property loss, and other harm.
+Participating in arrangements with other members involves risks, including accidents, injury, theft, harassment, assault, property loss, and other potential harm.
 
-Members are responsible for assessing these risks and making their own decisions about participating.
+Members are responsible for evaluating these risks and deciding whether to participate in any arrangement.
 
-Connectango cannot guarantee the identity, conduct, intentions, or safety of its members.
+**Connectango cannot guarantee the identity, conduct, reliability, or safety of its members.**
 
-Your use of Connectango is also governed by our Terms of Service, which describe the platform's role, members' responsibilities, and applicable limitations of liability, subject to applicable law.
+By using Connectango, you agree to our [Terms of Use](https://connectango.org/terms.html), which include provisions concerning Assumption of Risk, Release of Claims, and Limitation of Liability, subject to applicable law.
 
 ## A note about our pilot
 
