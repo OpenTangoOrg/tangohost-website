@@ -1,6 +1,6 @@
 # Connectango Terms of Use
 
-**Last updated: October 24, 2026**
+**Last updated: November 12, 2026**
 
 ## 1. Welcome to Connectango
 
@@ -85,6 +85,8 @@ We encourage users to:
 - Decline or cancel arrangements if they feel uncomfortable or unsafe
 
 **You are never obligated to accept a ride, host someone, or share accommodations simply because a connection was made through Connectango.**
+
+By using Connectango, you acknowledge that arranging rides, accommodations, or hospitality with other members involves inherent risks. You are responsible for evaluating these risks and making your own decisions. We encourage you to review our [Personal Safety] guidelines before participating in arrangements.
 
 ## 7. Community Conduct
 
