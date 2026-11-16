@@ -1,6 +1,6 @@
 # Connectango Privacy Policy
 
-**Last updated: November 15, 2026**
+**Last updated: November 16, 2026**
 
 ## 1. Introduction
 
@@ -30,6 +30,10 @@ When you create an account or use Connectango, we may collect the following info
 - Accommodation and hosting preferences
 - Information you choose to share with other participants
 
+**Reviews**
+- After an event, whether you would share a ride or room again with the people you shared one with
+- Any private note you add to a "Rather not" answer
+
 **Technical information**
 
 We may collect limited technical information necessary to operate, secure, and improve the platform, such as authentication records, IP addresses, and application error information.
@@ -42,7 +46,9 @@ We use your information to:
 - Connect you with other tango dancers
 - Facilitate ride sharing, room sharing, and hosting arrangements
 - Help event organizers coordinate participating dancers
-- Send essential notifications about your account and activities
+- Send essential notifications about your account and activities, including one email after each event when reviews open
+- Show, on members' profiles, how many rides and rooms they have shared and how many members recommend them
+- Keep the community safe, including by looking into "Rather not" reviews and no longer suggesting that two members share after one of them answered "Rather not"
 - Maintain the security and reliability of the platform
 - Improve the user experience
 
@@ -64,6 +70,8 @@ Information is shared to facilitate connections and coordination.
 
 **Your WhatsApp number is never shown on your profile.** Only the people you choose to share it with can see it, and only while you share a carpool or room share with them, until three days after the event ends. You can stop sharing it with someone at any time.
 
+**Reviews.** Your profile shows how many rides and rooms you have shared through Connectango, and, once at least three members have said they would share with you again, how many did. It never shows who reviewed you. "Rather not" answers and their private notes are seen only by the Connectango team; the person concerned is never told, and they are never shown on any profile. After a "Rather not" from either of you, Connectango no longer suggests that you share a ride or room with each other.
+
 **We encourage you not to share sensitive personal information, such as your exact home address, until you feel comfortable with the person you are communicating with.**
 
 ## 5. Information Shared With Event Organizers
@@ -77,7 +85,7 @@ This information is provided to help organizers coordinate their events and supp
 Connectango uses third-party services to operate the platform, which may include:
 
 - **Supabase**, for authentication and secure data storage
-- **Resend**, for transactional emails such as account verification
+- **Resend**, for transactional emails such as account verification and review reminders
 - **Cloudflare Turnstile**, for protection against automated abuse
 
 These services may process limited personal or technical information as necessary to provide their functionality, subject to their respective privacy practices.
@@ -91,6 +99,8 @@ However, no online service can guarantee absolute security.
 ## 8. Data Retention and Account Deletion
 
 We retain personal information for as long as reasonably necessary to provide Connectango services, maintain security, and meet applicable legal obligations.
+
+Private notes added to reviews are deleted two years after they were last written.
 
 You may request deletion of your account and associated personal information by contacting us.
 
