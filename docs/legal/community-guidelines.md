@@ -1,6 +1,6 @@
 # Connectango Community Guidelines
 
-**Last updated: October 24, 2026**
+**Last updated: November 16, 2026**
 
 ## Welcome to Connectango!
 
@@ -98,16 +98,22 @@ Connecting with someone through Connectango does not give you permission to shar
 
 For more information about how Connectango handles personal data, please see our **Privacy Policy**.
 
-## 6. Reviews and Ratings
+## 6. Reviews
 
-If reviews or ratings become available on Connectango, we expect them to reflect genuine experiences.
+After each event, Connectango asks whether you would share a ride or room again with the people you shared one with. Your answers help other members make informed decisions and help us keep the community safe.
 
-- Share honest, fair, and respectful feedback.
-- Do not submit fake or misleading reviews.
+We expect reviews to reflect genuine experiences.
+
+- Answer honestly, based on your actual experience sharing with that person.
+- Use "Rather not" for genuine concerns, not to punish someone for a personal disagreement.
+- Keep any private note factual and respectful.
 - Do not offer or accept money, discounts, favors, or other incentives in exchange for positive reviews.
+- Do not pressure anyone about how they review you.
 - Do not use reviews to harass, retaliate against, or intimidate other members.
 
-Feedback should help the community make informed decisions, not punish people for personal disagreements.
+"Rather not" answers and private notes are seen only by the Connectango team. They are never shown to the person concerned or on any profile.
+
+If you have a serious safety concern, please report it directly (see Reporting Problems below) rather than relying on a review alone.
 
 ## 7. Safety First
 
