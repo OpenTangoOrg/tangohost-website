@@ -1,6 +1,6 @@
 # Connectango Privacy Policy
 
-**Last updated: October 24, 2026**
+**Last updated: November 15, 2026**
 
 ## 1. Introduction
 
@@ -19,7 +19,8 @@ When you create an account or use Connectango, we may collect the following info
 **Account and profile information**
 - Your first and last name
 - Your email address
-- Your Facebook profile link, if provided
+- Your Facebook and Instagram profile links, if provided
+- Your WhatsApp number, if provided
 - Other information you voluntarily add to your profile
 
 **Event and travel information**
@@ -53,13 +54,15 @@ Connectango is designed around community connections. Certain information may be
 
 This may include:
 
-- Your name and profile information
+- Your name and profile information, including your Facebook and Instagram profile links if you provide them
 - Events you are participating in
 - Ride-sharing or accommodation requests
 - Hosting availability and preferences
 - Travel details you choose to share
 
 Information is shared to facilitate connections and coordination.
+
+**Your WhatsApp number is never shown on your profile.** Only the people you choose to share it with can see it, and only while you share a carpool or room share with them, until three days after the event ends. You can stop sharing it with someone at any time.
 
 **We encourage you not to share sensitive personal information, such as your exact home address, until you feel comfortable with the person you are communicating with.**
 
